@@ -3,48 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles/style.css">
   
   <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
   <body>
-
-    <!-- A div with container id to hold the card -->
     <div id="container">
-
-      <!-- A div with card class for the card  -->
       <div class="card">
-        <img src="images/illustration-hero.svg" alt="Lago di Braies">
-
-        <!-- A div with card__details class to hold the details in the card  -->
-        <div class="card__details">
-
-          <!-- Span with tag class for the tag -->
-          <span class="tag">Nature</span>
-
-          <span class="tag">Lake</span>
-
-          <!-- A div with name class for the name of the card -->
-          <div class="name">Lago di Braies</div>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
-            pharetra
-            vitae ipsum odio.</p>
-
-          <button>Read more</button>
+        <img src="images/illustration-hero.svg" alt="illustration-hero" style="width:100%">
+        <div class="card_content">
+          <h1>Order Summary</h1>
+          <p>
+            You can listen to million of songs,
+            audiobooks, and podcasts on any device 
+            anywhere you like!
+          </p>
         </div>
-
-
+        <div class="card__details">
+          <div class="card__detail">
+            <img class="music-icon" src="images/icon-music.svg" alt="icon music">
+          </div>
+          <div class="card__detail">
+            <div class="card__detail_data">
+              <h2 class="card__detail-num">Annual Plan</h2>
+              <span class="card__detail-text">$59.99/year</span>
+            </div>
+          </div>
+          <div class="card__detail">
+            <button class="change"> change </button>
+          </div>
+        </div>
+        <div class="card_footer">
+          <button class="submit">Proceed to Payment</button>
+          <button class="cancel">Cancel Order</button>
+        </div>
       </div>
     </div>
-
   </body>
 </html>
